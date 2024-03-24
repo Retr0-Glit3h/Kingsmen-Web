@@ -1,0 +1,16 @@
+.cartCard{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.cartCard:hover{
+    transform: scale(0.9);
+    background-color: #393E46;
+    transition: all 0.3s ease-in-out;
+}

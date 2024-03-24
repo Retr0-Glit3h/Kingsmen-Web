@@ -1,0 +1,70 @@
+.hCart{
+    margin-top: 2rem;
+    text-align: center;
+    color:  #393E46;
+}
+
+.CartCardAln{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CartPageAln{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.CheckoutCardAlnIn{
+    width: 75%;
+    height: 40%;
+}
+
+.CheckoutCardAlnOut{
+    margin-top: 4rem;
+}
+
+.CouponAln{
+    margin-top: 1rem;
+    color:  #393E46;
+}
+
+
+.inputCoupon {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .CouponTxt {
+    min-height: 50px;
+    width: 469px;
+    padding: 0 1rem;
+    color: #393E46;
+    font-size: 15px;
+    border: 1px solid #FFD369;
+    /* border-radius: 6px 0 0 6px; */
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    /* border-radius: 0 6px 6px 0; */
+    background-color: #FFD369;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #FFD369;
+  }
+  
+  .CouponTxt:focus, .CouponTxt:focus-visible {
+    border-color: #FFD369;
+    outline: none;
+  }
+  

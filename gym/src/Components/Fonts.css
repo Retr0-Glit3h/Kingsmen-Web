@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&family=Sedgwick+Ave+Display&display=swap');
+
+.Mont100{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.Mont400{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.Mont500{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.Mont600{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.Mont800{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.Sedgwick400{
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.Tweb800{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 800;
+}

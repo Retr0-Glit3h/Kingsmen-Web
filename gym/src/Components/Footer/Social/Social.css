@@ -1,0 +1,21 @@
+.social{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.socialIcon:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+
+}

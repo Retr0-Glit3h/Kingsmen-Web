@@ -1,0 +1,17 @@
+.txtItemAlign{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0 10px;
+    gap: 100px;
+}
+
+.inviCard{
+    width: 8%;
+    border: 2px;
+    background-color: transparent;
+}
