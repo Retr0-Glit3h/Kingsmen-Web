@@ -7,31 +7,9 @@
     padding: 0 0 0 0;
 }
 
-.CatCard{
-    border-radius: 60px;
-    box-shadow:  32px 32px 100px #bfbfbf,
-             -32px -32px 100px #ffffff00;
-}
-
-.CatCard img{
-    border-radius: 60px;
-}
-
-.CatCard:hover{
-    transform: scale(0.9);
-    transition: 0.5s ease-in-out;
-    box-shadow:  32px 32px 100px #fae3af,
-             -32px -32px 100px #fae3af;
-
-}
-
 .rowCatCard{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.resizeCard{
-    width: 80%;
-    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 5rem;
 }

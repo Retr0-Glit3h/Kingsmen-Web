@@ -2,14 +2,11 @@ import React, {useState, useEffect} from "react";
 import CarouselHome from "./Carousel/Carousel.jsx";
 import ProdCard from "../Prodcard/ProdCard.jsx";
 import HomeInfoSec from "./HomeInfo/homeInfoSec.jsx";
-// import ProdData from "../Prodcard/prod_Data.jsx";
-import JustLaunchedData from "../Prodcard/JLData.jsx";
-import JLCard from "../Prodcard/JLCard.jsx";
 import "./Home.css";
 import "../Fonts.css";
 import FooterNew from "../Footer/Footer.jsx";
 import TopRedirect from "../TopRedirectButton/TopRedirect";
-import { supabase } from "../Test/supabaseClient.jsx"
+import { supabase } from "../supabaseClient.jsx"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

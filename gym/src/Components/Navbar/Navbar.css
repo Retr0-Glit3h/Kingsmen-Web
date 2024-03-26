@@ -26,7 +26,6 @@
 	background-color: var(--mainColor);
 	color: var(--textColor);
 	box-shadow: 5px 5px 25px #2228312d;
-	border: 1px solid red;
 }
 
 .navLinks{

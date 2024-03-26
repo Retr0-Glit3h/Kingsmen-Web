@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./ProdCard.css";
 // import ProdData from './prod_Data';
 
-const ProdCard = ({ProdImage, ProdTitle, ProdPrice}) => {
+const ProdCard = ({product}) => {
   const [buttonTxt, setButtonTxt] = useState('Add to Cart');
 
   function handleChange() {
@@ -17,11 +17,11 @@ const ProdCard = ({ProdImage, ProdTitle, ProdPrice}) => {
       <>
         <div class="Prodcard">
           <div class="Prodcard-img">
-            <img src={ProdImage} alt={ProdTitle} />
+            <img src={product.ProductImg} alt={product.ProductName} />
           </div>
           <div class="Prodcard-info">
-            <p class="text-title Mont200" style={{fontSize:16}}>{ProdTitle}</p>
-            <span class="text-title Mont200" style={{fontSize:16}}>{ProdPrice}</span>
+            <p class="text-title Mont200" style={{fontSize:16}}>{product.ProductName}</p>
+            <span class="text-title Mont200" style={{fontSize:16}}>{product.ProductPrice}</span>
           </div>
           <div class="Prodcard-footer">
             <button class="button2" onClick={handleChange}>{buttonTxt}</button>
