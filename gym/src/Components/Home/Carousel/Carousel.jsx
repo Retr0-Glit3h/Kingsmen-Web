@@ -2,6 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {useState} from "react"; 
 import data from './CarouselImage';
+import "./Carousel.css"
 
 function CarouselHome() {
   const [index, setIndex] = useState(0);
@@ -15,8 +16,9 @@ function CarouselHome() {
         return (
           <Carousel.Item interval={2000}>        
             <img
-              style={{height:"750px"}}
-              className="d-block w-100"
+              // style={{height:"750px"}}
+              // className="d-block w-100"
+              className='carouselImage'
               src={slide.imageUrl}
               alt="slider image"
             />

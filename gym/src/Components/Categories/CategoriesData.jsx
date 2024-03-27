@@ -1,52 +1,52 @@
 const CategoriesData = [
   {
-    imageUrl: "https://img1.hkrtcdn.com/27140/smn_image_2713960_o.png",
+    imageUrl: "https://www.wallpaperflare.com/static/165/958/530/men-robert-downey-jr-monochrome-suits-wallpaper.jpg",
     title: "Formals",
     path: "Formal",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Casuals",
     path: "Casual",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Tuxedos",
     path: "Tuxedo",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Specials",
     path: "Specials",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png", 
+    imageUrl: "https://via.placeholder.com/250x200", 
     title: "Blazers",
-    path:"blazer",
+    path:"Blazer",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Shirts",
     path: "Shirt",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Pants",
     path: "Pant",
   },
   
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Vests",
     path: "Vest",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Ties",
     path: "Tie",
   },
   {
-    imageUrl: "https://img7.hkrtcdn.com/27140/smn_image_2713966_o.png",
+    imageUrl: "https://via.placeholder.com/250x200",
     title: "Shoes",
     path: "Shoes",
   },

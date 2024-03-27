@@ -28,6 +28,8 @@ const CategoriesPage = () => {
         setProducts(data);
     }
 
+    console.log(filteredData);
+
     return (
         <div className="categoriesPage">
             <h1>{id.toUpperCase()}</h1>

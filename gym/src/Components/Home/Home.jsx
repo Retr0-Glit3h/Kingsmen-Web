@@ -44,8 +44,8 @@ const Home = () =>{
             <br/>
             <div className="rowCard">
             <Slider {...settings}>
-                {products?products.map((Prod) => (
-                    <ProdCard key={Prod.id} ProdImage={Prod.ProductImg} ProdTitle={Prod.ProductName} ProdPrice={Prod.ProductPrice}/>
+                {products?products.map((product) => (
+                    <ProdCard key={product.id} product={product}/>
                     )):null
                 }
             </Slider>

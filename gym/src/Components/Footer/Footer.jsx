@@ -9,7 +9,7 @@ function FooterNew() {
         <Social />
         <div className="tline alignBoxFoot" a>
           <p className="Mont400" style={{ color: "#c4c4c4", fontSize: 12}}>
-            All products are manufactured at FSSAI approved manufacturing facilities and are not intended to diagnose, treat, cure, or prevent any disease.
+          Where Style Meets Quality - Elevate Your Wardrobe Today!
           </p>
         </div>
       </footer>
