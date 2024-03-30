@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(32, 32, 32);
     margin: 0;
 }
 
@@ -16,7 +16,7 @@ body{
 
 .infoSect{
     padding: 20px;
-    background-color: #3a3a3a;
+    background-color: #ab987a;
 }
 
 .alignHomeItems{

@@ -1,44 +1,72 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { supabase } from "../supabaseClient";
-import "./Test.css";
+// Import React and other necessary libraries
+import React, { useState } from 'react';
 
-function Test() {
-  const [data, setData] = useState([]);
-  // Fetches the watchlist from the database
-  useEffect(() => {
-    getData();
-  }, []);
 
-  async function getData() {
-    const { data } = await supabase.from("Products").select();
-    setData(data);
-  }
-  console.log(data);
+// Define the SizePage component
+const SizePage = () => {
+  // Define state variables for user sizes
+  const [chestSize, setChestSize] = useState('');
+  const [waistSize, setWaistSize] = useState('');
+  const [inseamSize, setInseamSize] = useState('');
+  const [shoulderSize, setShoulderSize] = useState('');
+  const [sleeveSize, setSleeveSize] = useState('');
+
+  // Define a function to handle submitting sizes
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Logic to handle submitting sizes, for example, sending them to a server
+    alert('Sizes submitted!');
+  };
+
   return (
-    <>
-      <table>
-        <thead>
-          <tr>
-            <th>Product Name</th>
-            <th>Product Image</th>
-            <th>Product Price</th>
-            <th>Product Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((match) => (
-            <tr key={match.id}>
-              <td>{match.ProductName}</td>
-              <td> <img src={match.ProductImg}/></td>
-              <td>{match.ProductPrice}</td>
-              <td>{match.ProductCategory}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </>
+    <div className="size-page">
+      <h1>Size Chart</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Chest Size:
+          <input
+            type="text"
+            value={chestSize}
+            onChange={(event) => setChestSize(event.target.value)}
+          />
+        </label>
+        <label>
+          Waist Size:
+          <input
+            type="text"
+            value={waistSize}
+            onChange={(event) => setWaistSize(event.target.value)}
+          />
+        </label>
+        <label>
+          Inseam Size:
+          <input
+            type="text"
+            value={inseamSize}
+            onChange={(event) => setInseamSize(event.target.value)}
+          />
+        </label>
+        <label>
+          Shoulder Size:
+          <input
+            type="text"
+            value={shoulderSize}
+            onChange={(event) => setShoulderSize(event.target.value)}
+          />
+        </label>
+        <label>
+          Sleeve Size:
+          <input
+            type="text"
+            value={sleeveSize}
+            onChange={(event) => setSleeveSize(event.target.value)}
+          />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
-}
+};
 
-export default Test;
+// Export the SizePage component
+export default SizePage;

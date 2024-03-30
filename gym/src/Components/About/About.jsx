@@ -6,13 +6,12 @@ import TopRedirect from "../TopRedirectButton/TopRedirect";
 
 const About = () =>{
     return(<>
-    <section className="alignAboutItems imgFull" id="abtTop" style={{backgroundSize: 'cover', backgroundImage: `url("https://static1.hkrtcdn.com/mbnext/static/media/misc/banner.png")`}}>
+    <section className="alignAboutItems imgFull" id="abtTop" style={{backgroundSize: 'cover', backgroundImage: `url("https://wallpaperaccess.com/full/4975987.jpg")`}}>
         <div className="cardAlign">
-            <h1 className="Mont800" style={{color:"white"}}>Our <span className="Mont800" style={{color:"#FFD369"}}>Story</span></h1>
-            <p className="Mont600" style={{color:"white"}}>The journey of becoming India’s leading Sports Nutrition Brand</p>
+            <h1 className="Mont800" style={{color:"white"}}>Kingsmen <span className="Mont800" style={{color:"#FFD369"}}>Suits</span></h1>
             <div className="abtCard1">
-                <p className="Mont400">MuscleBlaze® was founded in 2012 with the idea of providing India with sports nutrition supplements that are specifically focused on Indian customer needs and listens to their sentiments day in day out.</p>
-                <p className="Mont400">MuscleBlaze® has quickly risen as consumer’s favorite brand with industry-first concept introductions like authenticity, protein test certificates, scoop on top, clinically researched products, etc.</p>
+                <p className="Mont400">Welcome to Kingsmen Suits where timeless sophistication meets impeccable craftsmanship , and leads to the creation of elegent suits for different occasions.</p>
+                <p className="Mont400">Here suit are made in such a way which gives you Comfort and Confidence at the same time .Here you will understand the difference between 'Wearing a suit' and 'Suiting Up' </p>
             </div>
             <br/><br/>
         </div>
@@ -20,43 +19,42 @@ const About = () =>{
     <section className="sectSide1" >
         <div style={{paddingTop:"250px" , paddingLeft:"200px", paddingBottom:"50px" }}>
             <div className="abtCard2">
-                <img src="https://static1.hkrtcdn.com/mbnext/static/media/aboutUs/img1.png" alt="about"/>
+                <img src="https://www.looper.com/img/gallery/the-secret-meaning-behind-aldo-rains-undercover-name-in-inglourious-basterds/intro-1609892771.jpg" alt="about"/>
             </div>
         </div>
         <div>
             <div className="alnContentRight">
-                <h1 className="Mont800" style={{color:"#FFD369"}}>Industry-First <span className="Mont800" style={{color:"#393E46"}}>Innovations</span></h1>
-                <p className="Mont400">Understanding and acting upon the consumer pulse have always driven MuscleBlaze® to provide industry-first solutions. Be it the problem of fake supplements, customers’ tussle in finding the scoop in a new jar or low results from a regular protein supplement, MuscleBlaze® had answers to all of them.</p>
-                <p className="Mont400">MuscleBlaze® was the first in India to introduce an SMS based product authenticity mechanism supported by a protein test certificate from NABL certified labs. MuscleBlaze® was also the first to introduce a patented Scoop-on-Top design to end the scoop tussle. And to top it all, MuscleBlaze’s Biozyme Whey is India’s first clinically tested product for Indian bodies which helps the consumers with enhanced protein absorption and thus better results and performance.</p>
+                <h1 className="Mont800" style={{color:"#393E46"}}>The  <span className="Mont800" style={{color:"#FFD369"}}> Origin </span></h1>
+                <p className="Mont400"></p>
+                <p className="Mont400">Established in 1949, Kingsmen is an Italy based company with unparalleled craftsmanship and timeless designs.It was founded by Mr.Enzo Gorlomi with a vision to revolutionize the world of menswear,He went on a journey to redefine what it means to wear a suit. He Once said "Un albero attraversa anni di lotta per diventare grande e risaltare in una folla di piccoli alberi, allo stesso modo farò un abito per uomini che hanno lottato per anni per distinguersi in un gruppo di popoli" which translates to "A Tree goes through years of struggle to become big and standout in a croud of small trees, in the same way I'll make suit for men who has struggled for years to standout in a group of peoples" </p>
             </div>
         </div>
     </section>
-    <section className="sectSide1" style={{backgroundColor:"#FFD369"}}>
+    <section className="sectSide1" style={{backgroundColor:"#838383"}}>
         <div>
             <div className="alnContentLeft">
-                <h1 className="Mont800" style={{color:"#FFF"}}>High-Quality <span className="Mont800" style={{color:"#393E46"}}>Ingredients & Processes</span></h1>
-                <p className="Mont400">Our passion for bringing international-grade fitness supplements has made us look around the world to source the very best whey and flavors. At MuscleBlaze® quality doesn’t just end at procuring the finest raw materials.</p>
-                <p className="Mont400">The manufacturing of the final products takes place at FSSAI, HACCP certified state of the art plant, which means that your supplement undergoes rigorous testing and multiple quality checks before it reaches you. In order to give more power to your reps and sets, we at MuscleBlaze® work hard to ensure international safety standards. MuscleBlaze® products are tested in accordance with FSSAI standards to assure you complete safety and the highest degree of quality. Put your worries to rest, because it takes a lot for a supplement to become a MuscleBlaze® supplement, your trusted fitness partner.</p>
+                <h1 className="Mont800" style={{color:"#FFF"}}>Product<span className="Mont800" style={{color:"#393E46"}}> & Progress</span></h1>
+                <p className="Mont400" style={{color:"#393E46"}}>At Kingsmen, every suit tells a story of meticulous craftsmanship and attention to detail. From the selection of the finest fabrics to the precision tailoring by our skilled artisans, each garment is crafted with utmost care and dedication. We take pride in the quality of our workmanship, ensuring that every stitch reflects our commitment to excellence.</p>
+                <p className="Mont400" style={{color:"#393E46"}}>Hence keeping it only till Italy would have been Dishonorable. So Mr. Dominic Gorlomi Son of mr.Enzo Gorlomi opened many outlets and spread the company all over Europe and USA in the year 1969. And in the year 2010 Ms.Alessia Gorlomi Grand child of Enzo Gorlami Made the company Globle through internet. </p>
             </div>
         </div>
         <div style={{paddingTop:"250px" , paddingRight:"150px", paddingBottom:"50px" }}>
             <div className="abtCard3">
-                <img src="https://static1.hkrtcdn.com/mbnext/static/media/aboutUs/img2.png" alt="about"/>
+                <img src="https://i.pinimg.com/736x/fe/bc/bb/febcbb34fcead6b3ac7894baea63b1a9.jpg" alt="about"/>
             </div>
         </div>
     </section>
     <section className="sectSide1">
         <div style={{paddingTop:"250px" , paddingLeft:"200px", paddingBottom:"50px" }}>
             <div className="abtCard4">
-                <img src="https://static1.hkrtcdn.com/mbnext/static/media/aboutUs/img3.png" alt="about"/>
+                <img src="https://www.suitsexpert.com/wp-content/uploads/2019/08/most-expensive-mens-suits-cover-1080x675.jpg" alt="about"/>
             </div>
         </div>
         <div>
             <div className="alnContentRight">
-                <h1 className="Mont800" style={{color:"#FFD369"}}>Research <span className="Mont800" style={{color:"#393E46"}}>Oriented</span></h1>
-                <p className="Mont400">Driven by the desire to exceed your expectations, we have brought together pharmaceutical expertise and the best experts of the chocolate flavor to create a path-breaking formulation with unmatched taste.</p>
-                <p className="Mont400">This gave birth to the "Best Tasting Chocolate Whey Protein Shake", which was confirmed by the consumers themselves in a blind taste study done by Nielsen in 2015.</p>
-                <p className="Mont400">The same research orientation was also the bedrock for the formulation of Biozyme Whey, which was crafted over a 2-year period and clinically tested to provide 50% higher protein absorption. Our commitment to research-backed products helps us in our aim to become a sports nutrition brand that gives you international grade quality supplements and 100% safety assurance at a genuine price.</p>
+                <h1 className="Mont800" style={{color:"#FFD369"}}>Qualitied <span className="Mont800" style={{color:"#393E46"}}>Suits</span></h1>
+                <p className="Mont400">Quality is the cornerstone of everything we do at Kingsmen. We source premium fabrics from renowned mills around the world, ensuring that our suits not only look exceptional but also feel luxurious to wear. Our rigorous quality control processes guarantee that each garment meets our exacting standards before it reaches our customers.</p>
+                <p className="Mont400">Our vision is to empower men to embrace their individuality and express their personal style through impeccably tailored suits. We aspire to be the destination of choice for discerning gentlemen seeking quality, sophistication, and timeless elegance in their wardrobe.</p>
             </div>
         </div>
     </section>

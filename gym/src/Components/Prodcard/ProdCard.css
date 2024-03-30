@@ -137,8 +137,8 @@
     padding: 0.4em 1.3em;
     font-size: 18px;
     border-radius: 0.5em;
-    background: #FFD369;
-    border: 1px solid #FFD369;
+    background: #ffffff;
+    border: 1px solid #ffffff;
     box-shadow: 6px 6px 12px #c5c5c5,
                -6px -6px 12px #ffffff;
   }
@@ -180,7 +180,7 @@
   }
   
   .button2:hover {
-    color: #FFD369;
+    color: #ffffff;
     border: 1px solid #393E46;
   }
   
