@@ -10,11 +10,11 @@ function NavBar() {
 			<div className="navbar">
 				<div className="navLinks">
 					<nav>
-						<Link to="/">Home</Link>
-						<Link to="/Categories">Products</Link>
-						<Link to="/" className="logoLink"><h3 className="Sedgwick400 lgo">Kingsmen</h3></Link>
-						<Link to="/About">About</Link>
-						<Link to="Test">Profile</Link>
+						<Link to="/" className="navUrls">Home</Link>
+						<Link to="/Categories" className="navUrls">Products</Link>
+						<Link to="/" className="logoLink"><h3 className="lgo">Kingsmen</h3></Link>
+						<Link to="/About " className="navUrls">About</Link>
+						<Link to="Test" className="navUrls">Profile</Link>
 					</nav>
 				</div>
 				<div className="CartSec">

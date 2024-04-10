@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import CarouselHome from "./Carousel/Carousel.jsx";
 import ProdCard from "../Prodcard/ProdCard.jsx";
+import SeasonalFavs from "./Categories/seasonalFavs.jsx";
 import HomeInfoSec from "./HomeInfo/homeInfoSec.jsx";
 import "./Home.css";
 import "../Fonts.css";
@@ -28,7 +29,7 @@ const Home = () =>{
     const settings = {
         infinite: true,
         speed: 400,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 2,
         swipeToSlide: true,
     };
@@ -40,15 +41,42 @@ const Home = () =>{
         </div>
         <section className="alignHomeItems popSect">
             <br/>
-            <div class="vl"><h1 className="Mont800" style={{color:"#393E46", paddingLeft:"10px"}}>Popular</h1></div>
-            <br/>
-            <div className="rowCard">
-            <Slider {...settings}>
-                {products?products.map((product) => (
-                    <ProdCard key={product.id} product={product}/>
-                    )):null
-                }
-            </Slider>
+            <div>
+                <div className="sectionTitleBar">
+                    <div class="vl" />
+                    <span className="sectionTitle">New <span className="sectionTitle2">Arrivals</span></span>
+                </div>
+                <div className="rowCard">
+                    <Slider {...settings}>
+                        {products?products.map((product) => (
+                            <ProdCard key={product.id} product={product}/>
+                            )):null
+                        }
+                    </Slider>
+                </div>
+            </div>
+            <div>
+                <div className="sectionTitleBar">
+                    <div class="vl" />
+                    <span className="sectionTitle">Seasonal <span className="sectionTitle2">Collection</span></span>
+                </div>
+                <div className="seasonalSection">
+                    <SeasonalFavs />
+                </div>
+            </div>
+            <div>
+                <div className="sectionTitleBar">
+                    <div class="vl" />
+                    <span className="sectionTitle">Seasonal <span className="sectionTitle2">Favs</span></span>
+                </div>
+                <div className="rowCard">
+                    <Slider {...settings}>
+                        {products?products.map((product) => (
+                            <ProdCard key={product.id} product={product}/>
+                            )):null
+                        }
+                    </Slider>
+                </div>
             </div>
             <br/><br/>    
         </section>

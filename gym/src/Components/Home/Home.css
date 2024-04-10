@@ -3,6 +3,14 @@ body{
     margin: 0;
 }
 
+.sectionTitleBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: .8rem;
+}
+
 .pageAlign{
     overflow: hidden;
     min-height: 100vh;
@@ -11,12 +19,12 @@ body{
 }
 
 .popSect{
-    background-color: #505050;
+    background-color: #ffffff;
 }
 
 .infoSect{
     padding: 20px;
-    background-color: #ab987a;
+    background-color: #ffffff;
 }
 
 .alignHomeItems{
@@ -27,9 +35,17 @@ body{
     width: 95%;
 }
 
+.seasonalSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem 6rem 2rem;
+}
+
 
 .vl {
-  border-left: 6px solid #505050;
+  border-left: .6rem solid #5b02ff;
   height: 50px;
 }
 
@@ -45,4 +61,17 @@ body{
     margin: 10px;
     gap: 6px;
     color: #dbdbdb;
+}
+
+.sectionTitle{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #232323;
+    padding-left: 1rem;
+}
+
+.sectionTitle2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #5b02ff;
 }

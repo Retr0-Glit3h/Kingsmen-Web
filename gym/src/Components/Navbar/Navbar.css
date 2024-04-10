@@ -6,14 +6,6 @@
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 800;
-	color: #ab987a;
-}
-
-:root {
-	--mainColor: rgb(255, 255, 255);
-	--mainColorLight: rgb(255, 255, 255);
-	--secondaryColor: #ab987a;
-	--textColor: #1d1e23;
 }
 
 .navbar{
@@ -27,6 +19,16 @@
 	background-color: var(--mainColor);
 	color: var(--textColor);
 	box-shadow: 5px 5px 25px #2228312d;
+}
+
+.lgo{
+	font-weight: 800;
+	font-size: 2.5rem;
+	color: #ab987a;
+}
+
+.navUrls{
+	color: aliceblue;
 }
 
 .navLinks{

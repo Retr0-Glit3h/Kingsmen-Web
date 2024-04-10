@@ -20,11 +20,9 @@ const ProdCard = ({product}) => {
             <img src={product?product.ProductImg:null} alt={product?product.ProductName:"NO DATA"} />
           </div>
           <div class="Prodcard-info">
-            <p class="text-title Mont200" style={{fontSize:16}}>{product?product.ProductName:"No Data"}</p>
-            <span class="text-title Mont200" style={{fontSize:16}}>{product?product.ProductPrice:"---"}</span>
-          </div>
-          <div class="Prodcard-footer">
-            <button class="button2" onClick={handleChange}>{buttonTxt}</button>
+            <span class="prodName">{product?product.ProductName:"No Data"}</span>
+            <span class="prodPrice">₹ {product?product.ProductPrice:"---"}</span>
+            <span class="prodSize">S M L XL XXL</span>
           </div>
         </div>
         </Link>

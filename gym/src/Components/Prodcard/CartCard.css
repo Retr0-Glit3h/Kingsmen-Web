@@ -3,14 +3,16 @@
     justify-content: center;
     display: flex;
     border-radius: 50%;
-    width: 80%;
-    height: 80%;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 0 auto;
-    background-color: #FFFFFF;
+    background-color: #202020;
+    color: #ab987a;
 }
 
 .cartCard:hover{
-    transform: scale(0.9);
-    background-color: #393E46;
+    transform: scale(.9rem);
+    background-color: #ab987a;
+    color: #fff;
     transition: all 0.3s ease-in-out;
 }
