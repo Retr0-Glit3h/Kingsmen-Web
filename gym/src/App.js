@@ -9,6 +9,8 @@ import NavBar from "./Components/Navbar/Navbar";
 import ProductDesc from "./Components/ProductDescPage/ProductDesc";
 import CategoriesPage from "./Components/Categories/CategoriesPage/CategoriesPage";
 import Test from "./Components/Test/Test";
+import Signup from "./Components/Authentication/Signup";
+import Login from "./Components/Authentication/Login";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Details/:id" element={<ProductDesc/>} />
           <Route exact path="/Test" element={<Test/>} />
+          <Route exact path="/Signup" element={<Signup/>} />
+          <Route exact path="/Login" element={<Login/>} />
         </Routes>
       </Router>
     </>

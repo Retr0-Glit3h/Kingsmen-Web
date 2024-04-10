@@ -20,7 +20,7 @@ const SizePage = () => {
 
   return (
     <div className="size-page">
-      <h1>Size Chart</h1>
+      
       <form onSubmit={handleSubmit}>
         <label>
           Chest Size:

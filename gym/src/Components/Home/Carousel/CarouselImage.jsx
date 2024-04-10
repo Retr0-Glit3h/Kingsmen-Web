@@ -10,7 +10,7 @@ const data = [
         description:"Description 3"
        },
        {
-        imageUrl: "https://images5.alphacoders.com/703/703050.jpg", 
+        imageUrl: "https://wallpapercave.com/wp/wp5208827.jpg", 
         caption:"Slide 4",
         description:"Description 4"
        },

@@ -40,7 +40,7 @@ const Home = () =>{
         </div>
         <section className="alignHomeItems popSect">
             <br/>
-            <div class="vl"><h1 className="Mont800" style={{color:"#393E46", paddingLeft:"10px"}}>Popular</h1></div>
+            <div class="vl"><h1 className="Mont800" style={{color:"#ffc746", paddingLeft:"10px"}}>Popular</h1></div>
             <br/>
             <div className="rowCard">
             <Slider {...settings}>

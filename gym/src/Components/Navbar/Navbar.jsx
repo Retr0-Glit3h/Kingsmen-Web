@@ -14,7 +14,7 @@ function NavBar() {
 						<Link to="/Categories">Products</Link>
 						<Link to="/" className="logoLink"><h3 className="Sedgwick400 lgo">Kingsmen</h3></Link>
 						<Link to="/About">About</Link>
-						<Link to="Test">Profile</Link>
+						<Link to="/Login">Sign In</Link>
 					</nav>
 				</div>
 				<div className="CartSec">

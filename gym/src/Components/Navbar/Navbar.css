@@ -6,14 +6,14 @@
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 800;
-	color: #ab987a;
+	color: #ffc746 ;
 }
 
 :root {
 	--mainColor: rgb(255, 255, 255);
 	--mainColorLight: rgb(255, 255, 255);
-	--secondaryColor: #ab987a;
-	--textColor: #1d1e23;
+	--secondaryColor: #ffc746;
+	--textColor: #1c1c1c;
 }
 
 .navbar{

@@ -23,7 +23,7 @@ const About = () =>{
             </div>
         </div>
         <div>
-            <div className="alnContentRight">
+            <div className="alnContentRight" >
                 <h1 className="Mont800" style={{color:"#393E46"}}>The  <span className="Mont800" style={{color:"#FFD369"}}> Origin </span></h1>
                 <p className="Mont400"></p>
                 <p className="Mont400">Established in 1949, Kingsmen is an Italy based company with unparalleled craftsmanship and timeless designs.It was founded by Mr.Enzo Gorlomi with a vision to revolutionize the world of menswear,He went on a journey to redefine what it means to wear a suit. He Once said "Un albero attraversa anni di lotta per diventare grande e risaltare in una folla di piccoli alberi, allo stesso modo farò un abito per uomini che hanno lottato per anni per distinguersi in un gruppo di popoli" which translates to "A Tree goes through years of struggle to become big and standout in a croud of small trees, in the same way I'll make suit for men who has struggled for years to standout in a group of peoples" </p>
