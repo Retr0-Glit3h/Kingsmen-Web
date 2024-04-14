@@ -1,16 +1,18 @@
 /* Product Description Container */
 .sectProdAln {
     padding: 20px;
+    height: 80vh;
   }
   
   /* Product Image */
-  .prodImg img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+.prodImg img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
   
   /* Product Description */
   .prodDesc {
@@ -39,16 +41,76 @@
   .prodBtn {
     margin-top: 20px;
   }
+
+  .horizontalLine{
+    border-top: 1px solid #636363;
+    margin: 1rem 0; 
+    width: 32rem;
+  }
   
   /* Product Shipping Information */
   .prodShip {
     display: flex;
+    flex-direction: row;
     align-items: center;
     color: #ffc746;
     font-size: 16px;
+    gap: 2rem;
+    padding-left: 1rem
   }
   
-  .prodShip span {
+  .prodShipAlign span{
     margin-left: 5px;
   }
   
+
+  .btnAlign{
+    margin-top: 2rem;
+  }
+
+  .productTitleMain{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffc746;
+  }
+
+  .productPriceMain{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffc746;
+  }
+
+  .productPriceMain2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .productPriceDesc{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .alignProdTitleInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ATCbtn{
+    background-color: #ffc746;
+    border: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ATCbtn:hover{
+    background-color: #b47e00;
+    color: black;
+  }

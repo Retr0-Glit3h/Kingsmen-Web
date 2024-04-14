@@ -8,13 +8,16 @@ function SeasonalFavs(){
     return(<>
     {Data.map((item) => {
         return(
+        
             <div className="seasonalCard">
-                <div className="seasonalCardImg">
-                    <img src={item.img} alt={item.alt} className="seasonalImg"/>
-                </div>
-                <div className="seasonalOverlay">
-                    <span class="seasonalTitle">{item.title}</span>
-                </div>
+                <Link to={item.link} className="seasonalLink">
+                    <div className="seasonalCardImg">
+                        <img src={item.img} alt={item.alt} className="seasonalImg"/>
+                    </div>
+                    <div className="seasonalOverlay">
+                        <span class="seasonalTitle">{item.title}</span>
+                    </div>
+                </Link>
             </div>
         )
     })}

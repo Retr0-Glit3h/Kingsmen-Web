@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Profile from './Profile';
 import EditProfile from './EditProfile';
 import './Test.css';
-import { supabase } from '../supabaseClient';
-import { Email } from '@mui/icons-material';
+import NavBar from '../Navbar/Navbar';
+
 
 function Info() {
   const [isEditing, setIsEditing] = useState(false);
@@ -13,10 +13,10 @@ function Info() {
     address: '',
     chest:'',
     waist:'',
+    image: '',
     sleeves:'',
     height: '',
     shoulder: '',
-
    
   });
 
@@ -29,7 +29,13 @@ function Info() {
     setIsEditing(false);
   };
 
-  return (
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    window.location.reload();
+  }
+
+  return (<>
+    <NavBar />
     <div className="App">
       <h1 className='header'>Profile Page</h1>
       {isEditing ? (
@@ -37,11 +43,12 @@ function Info() {
       ) : (
         <Profile profileData={profileData} />
       )}
-      <button onClick={toggleEdit}>
+      <button onClick={toggleEdit} className='edit-profile'>
         {isEditing ? 'Cancel' : 'Edit Profile'}
       </button>
+      <button onClick={() => handleLogout()} className='logout'>Logout</button>
     </div>
-  );
+  </>);
 }
 
 export default Info;

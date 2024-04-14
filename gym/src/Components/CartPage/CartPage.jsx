@@ -1,125 +1,80 @@
-import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import React, { useState, useEffect } from "react";
+import CartPageCard from "./CartPageCard/CartPageCard";
+import FooterNew from "../Footer/Footer";
+import NavBar from "../Navbar/Navbar";
+import { supabase } from "../supabaseClient";
+import CheckoutCard from "./CheckoutCard/CheckoutCard";
+import "./CartPage.css";
 
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+function CartPage() {
+  var TotalValue = 0;
 
-const defaultTheme = createTheme();
+  const cartData = JSON.parse(localStorage.getItem("cartData"));
 
-export default function SignUp() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+  const [products, setProducts] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    getProducts();
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    filterData();
+  }, [products, cartData]);
+
+  async function filterData() {
+    if (!products.length || !cartData) return;
+
+    const filteredProducts = [];
+    for (const productId of cartData) {
+      const { data: product } = await supabase
+        .from("Products")
+        .select()
+        .eq("ProductID", productId)
+        .single();
+      filteredProducts.push(product);
+    }
+
+    setFilteredData(filteredProducts);
+  }
+
+  async function getProducts() {
+    const { data } = await supabase.from("Products").select();
+    setProducts(data);
+  }
+
+  const handleRemoveAll = () => {
+    localStorage.removeItem("cartData");
+    window.location.reload();
+    setFilteredData([]);
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign up
-          </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  autoComplete="given-name"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="First Name"
-                  autoFocus
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  autoComplete="family-name"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
-                />
-              </Grid>
-            </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign Up
-            </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-        <br/> <br/>
-      </Container>
-    </ThemeProvider>
+    <>
+      <NavBar />
+      <section className="cartPage">
+        <h1 className="Mont800" style={{ textAlign: "center", color: "#FFC746" }}>
+              Cart
+        </h1>
+        <div className="cartPageAlign">
+          <div>
+            <div className="CartPageContBox">
+              {filteredData.map((product) => (
+                <CartPageCard key={product.ProductID} CartPageData={product} />
+              ))}
+            </div>
+            <button className="removeBtn" onClick={handleRemoveAll}>Remove All</button>
+          </div>
+          <div className="verticalCartDivide"/>
+          <div className="checkoutCardAln">
+            <CheckoutCard data={filteredData}/>
+          </div>
+        </div>
+      </section>
+      <FooterNew />
+    </>
   );
 }
+
+export default CartPage;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { supabase } from "../supabaseClient.jsx";
+import { supabase } from "../supabaseClient";
 import "./Signing.css";
 
 
@@ -102,9 +102,9 @@ function Signup() {
             onChange={handleChange}
             />
           </div>
-          <button type='submit' className='signUpButton' style={{color:'#ffc746'}}>Sign Up</button>
+          <button type='submit' className='signUpButton'>Sign Up</button>
         </form>
-          <span className='signLink' style={{color:'#ffc746'}}>Already have an account? <Link exact to="/signin">Sign In</Link></span>
+          <span className='signLink'>Already have an account? <Link exact to="/signin">Sign In</Link></span>
       </div>
     </>
   )};

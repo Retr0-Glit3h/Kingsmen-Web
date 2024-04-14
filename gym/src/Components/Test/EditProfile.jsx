@@ -47,48 +47,56 @@ function EditProfile({ profileData, saveChanges }) {
       <input
         type="text"
         name="name"
+        placeholder='Name'
         value={editedData.name}
         onChange={handleInputChange}
       />
       <input
-        type="text"
+        type="email"
         name="email"
+        placeholder='Email'
         value={editedData.id}
         onChange={handleInputChange}
       />
        <input
         type="text"
         name="address"
+        placeholder='Address'
         value={editedData.address}
         onChange={handleInputChange}
       />
       <input
         type="text"
         name="chest"
+        placeholder='Chest Size'
         value={editedData.chest}
         onChange={handleInputChange}
       />
       <input
         type="text"
         name="waist"
+        placeholder='Waist Size'
         value={editedData.waist}
         onChange={handleInputChange}
       />
       <input
         type="text"
         name="sleeves"
+        placeholder='Sleeves Size'
         value={editedData.sleeves}
         onChange={handleInputChange}
       />
       <input
         type="text"
         name="shoulder"
+        placeholder='Shoulder Size'
         value={editedData.shoulder}
         onChange={handleInputChange}
       />
       <input
         type="text"
         name="height"
+        placeholder='Height'
         value={editedData.height}
         onChange={handleInputChange}
       />

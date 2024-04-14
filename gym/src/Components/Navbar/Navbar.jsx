@@ -5,23 +5,16 @@ import CartCard from "../Prodcard/CartCard";
 
 function NavBar() {
 	return (
-		<header>
-			{/* <Link to="/" className="logoLink"><h3 className="Sedgwick400 lgo">Gymtopia</h3></Link> */}
-			<div className="navbar">
+		<header className="navigationBar">
 				<div className="navLinks">
 					<nav>
-						<Link to="Signin" className="navUrls">Sign In</Link>
-						<Link to="/" className="navUrls">Home</Link>
 						<Link to="/Categories" className="navUrls">Products</Link>
-						<Link to="/" className="logoLink"><h3 className="lgo">Kingsmen</h3></Link>
+						<Link to="/Cart" className="navUrls">Cart</Link>
+						<Link to="/home" className="logoLink"><h3 className="lgo">Kingsmen</h3></Link>
 						<Link to="/About " className="navUrls">About</Link>
-						<Link to="Test" className="navUrls">Profile</Link>
+						<Link to="/Test" className="navUrls">Profile</Link>
 					</nav>
 				</div>
-				<div className="CartSec">
-					<CartCard/>
-				</div>
-			</div>
 		</header>
 	);
 }

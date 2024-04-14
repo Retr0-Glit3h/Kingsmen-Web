@@ -1,3 +1,27 @@
+.cartPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0;
+
+}
+.cartPageAlign{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.checkoutCardAln{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 42rem;
+}
+
 .hCart{
     margin-top: 2rem;
     text-align: center;
@@ -67,4 +91,59 @@
     border-color: #FFD369;
     outline: none;
   }
+
+  .cartPageheader{
+    margin-top: 2rem;
+    text-align: center;
+    color:  #0062ff;
+  }
+
+.CartPageContBox{
+  gap: 1rem;
+  margin-left: 2rem;
+  overflow-y: scroll;
+  width: 70rem;
+  height: 40rem;
+  --sb-track-color: #232323;
+  --sb-thumb-color: #FFD369;
+  --sb-size: .7rem;
+}
+    
+.CartPageContBox::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+    
+.CartPageContBox::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+}
+    
+.CartPageContBox::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+}
+    
+@supports not selector(::-webkit-scrollbar) {
+.CartPageContBox {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+    }
+}
+
+.removeBtn{
+    background-color: #FFD369;
+    color: Black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.verticalCartDivide{
+    border: 1px solid #424242;
+    height: 45rem;
+}
+
   

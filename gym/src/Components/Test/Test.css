@@ -34,12 +34,24 @@
 
 .edit-profile input[type="text"],
 .edit-profile input[type="file"],
+.edit-profile input[type="email"],
 .edit-profile button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
   padding: 8px;
+  border-radius: .3rem;
+  border: none;
+  background-color: #1a1a1a;
+  color: #ffc746;
 }
+
+.edit-profile input[type="email"]::placeholder,
+.edit-profile input[type="text"]::placeholder {
+  color: #ffc84636;
+}
+
+
 
 .edit-profile button {
   background-color: #4b4b4b;
@@ -57,4 +69,26 @@
   max-width: 100px;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+
+.edit-profile{
+  background-color: #4b4b4b;
+  color: #ffc746;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.logout{
+  background-color: #4b4b4b;
+  color: #f54141;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
 }

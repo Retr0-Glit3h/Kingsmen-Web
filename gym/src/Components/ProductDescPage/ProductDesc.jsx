@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import "./ProductDesc.css";
-import CartButton from "../CartPage/CartButtons/CartButton";
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
+import ScreenRotationAltIcon from '@mui/icons-material/ScreenRotationAlt';
+import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 import FooterNew from "../Footer/Footer";
 import { supabase } from "../supabaseClient.jsx";
+import NavBar from "../Navbar/Navbar.jsx";
 
 
 function ProductDesc() {
@@ -23,30 +24,60 @@ function ProductDesc() {
         setProductData(product[0]);
         console.log(product);
     }
+
+    const handleAddToCart = () => {
+        // storing product id in local storage with key "productID"
+        if(localStorage.getItem("cartData")) {
+            let cartData = JSON.parse(localStorage.getItem("cartData"));
+            cartData.push(id);
+            localStorage.setItem("cartData", JSON.stringify(cartData));
+        }
+        else {
+            let cartData = [];
+            cartData.push(id);
+            localStorage.setItem("cartData", JSON.stringify(cartData));
+        }
+        alert("Product added to cart");
+    }
     
 
     return(<>
-    <br/>
+    <NavBar />
     <section className="sectProdAln">
-        <div className="container">
+        <div >
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-2">
                     <div className="prodImg">
                         <img src={productData.ProductImg} alt="product" />
                     </div>
                 </div>
                 <div className="col-md-6">
                     <div className="prodDesc">
-                        <h2>{productData.ProductName}</h2>
-                        <p>{productData?productData.ProductDesc:"No Data"}</p>
-                        <h3>Price: Rs {productData.ProductPrice}</h3>
-                        <div className="prodBtn">
-                            <CartButton />
+                        <div className="alignProdTitleInfo">
+                            <span className="productTitleMain">{productData.ProductName}</span>
+                            <span className="productPriceMain">Price: <span className="productPriceMain2">₹ {productData.ProductPrice}</span></span>
                         </div>
+                        <div className="btnAlign">
+                            <button className="ATCbtn" onClick={handleAddToCart}>Add to Cart</button>
+                        </div>
+                        <div className="horizontalLine" />
                         <div className="prodShip">
-                            <LocalShippingOutlinedIcon />
-                            <span>Free Shipping</span>
+                            <div className="prodShipAlign">
+                                <LocalShippingOutlinedIcon />
+                                <span>Free Shipping</span>
+                            </div>
+                            <div className="prodShipAlign">
+                                <ScreenRotationAltIcon />
+                                <span>14 Days return</span>
+                            </div>
+                            <div className="prodShipAlign">
+                                <ShieldOutlinedIcon />
+                                <span>Secure Transaction</span>
+                            </div>
+                            
                         </div>
+                        <div className="horizontalLine" />
+                        <p className="productPriceDesc">{productData?productData.Description:"No Data"}</p>
                     </div>
                 </div>
             </div>

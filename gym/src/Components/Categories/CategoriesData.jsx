@@ -1,16 +1,16 @@
 const CategoriesData = [
   {
-    imageUrl: "https://wallpaperaccess.com/full/4975987.jpg",
+    imageUrl: "https://imagescdn.vanheusenindia.com/img/app/product/8/887934-10705827.jpg?q=75&auto=format&w=387",
     title: "Formals",
     path: "Formal",
   },
   {
-    imageUrl: "https://www.bucco.us/wp-content/uploads/2022/03/Wool-Suit.jpg",
+    imageUrl: "https://imagescdn.vanheusenindia.com/img/app/product/3/39633303-13148314.jpg?q=75&auto=format&w=387",
     title: "Casuals",
     path: "Casual",
   },
   {
-    imageUrl: "https://media.gq.com/photos/630839ea50b89115f3da329a/1:1/w_4333,h_4333,c_limit/Jen-Ben_wedding_Aug2022_4078B_V3.jpg",
+    imageUrl: "https://imagescdn.vanheusenindia.com/img/app/product/8/887930-10705590.jpg?q=75&auto=format&w=387",
     title: "Tuxedos",
     path: "Tuxedo",
   },

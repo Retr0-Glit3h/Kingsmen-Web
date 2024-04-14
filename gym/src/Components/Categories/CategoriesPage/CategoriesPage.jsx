@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { supabase } from '../../supabaseClient';
 import ProdCard  from "../../Prodcard/ProdCard"
 import './CategoriesPage.css';
+import NavBar from "../../Navbar/Navbar";
 
 const CategoriesPage = () => {
     const { id } = useParams();
@@ -30,7 +31,8 @@ const CategoriesPage = () => {
 
     console.log(filteredData);
 
-    return (
+    return (<>
+        <NavBar/>
         <div className="categoriesPage">
             <h1>{id.toUpperCase()}</h1>
             <div className="ProductCards">
@@ -39,7 +41,7 @@ const CategoriesPage = () => {
                 ))}
             </div>
         </div>
-    );
+    </>);
 
 }
 

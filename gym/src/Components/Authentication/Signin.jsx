@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import {supabase} from '../supabaseClient.jsx';
+import { supabase } from "../supabaseClient";
 import "./Signing.css";
 
 
@@ -78,11 +78,10 @@ function Signin({setToken}) {
             </label>
             <span className='passText'>Show Password</span>
           </div>
-          <button type='submit' className='signUpButton' style={{color:'#ffc746'}}>Login</button>
+          <button type='submit' className='signUpButton'>Login</button>
         </form>
-    
-          <span className='signLink' style={{color:'#ffc746'}}>Don't have a account? <Link exact to="/Signup">Sign Up</Link></span>
-          <span className='signLink' style={{color:'#ffc746'}}><Link exact to="/forgot-password">Forgot Password?</Link></span>
+          <span className='signLink'>Don't have a account? <Link exact to="/signup">Sign Up</Link></span>
+          <span className='signLink'><Link exact to="/forgot-password">Forgot Password?</Link></span>
       </div>
     </>
   )};
