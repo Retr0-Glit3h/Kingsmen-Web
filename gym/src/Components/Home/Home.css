@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(49, 49, 49);
     margin: 0;
 }
 
@@ -45,7 +45,7 @@ body{
 
 
 .vl {
-  border-left: .6rem solid #5b02ff;
+  border-left: .6rem solid #ffc746;
   height: 50px;
 }
 
@@ -66,12 +66,12 @@ body{
 .sectionTitle{
     font-size: 3rem;
     font-weight: 800;
-    color: #232323;
+    color: #ffc746;
     padding-left: 1rem;
 }
 
 .sectionTitle2{
     font-size: 3rem;
     font-weight: 800;
-    color: #5b02ff;
+    color: #ffc746;
 }

@@ -10,7 +10,7 @@ const Prod = () => {
   return (
     <>
       <div className="alignProdItems resizeCard">
-        <h1 className="Mont800" style={{paddingTop:"50px"}}>Categories</h1>
+        <h1 className="Mont800" style={{paddingTop:"50px", color:'#ffc746'}}>Categories</h1>
         <br></br>
         <section >
           <div className="rowCatCard">

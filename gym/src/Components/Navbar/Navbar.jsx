@@ -10,6 +10,7 @@ function NavBar() {
 			<div className="navbar">
 				<div className="navLinks">
 					<nav>
+						<Link to="Signin" className="navUrls">Sign In</Link>
 						<Link to="/" className="navUrls">Home</Link>
 						<Link to="/Categories" className="navUrls">Products</Link>
 						<Link to="/" className="logoLink"><h3 className="lgo">Kingsmen</h3></Link>

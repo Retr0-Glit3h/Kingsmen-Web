@@ -1,45 +1,60 @@
 /* styles.css */
 
-.size-page {
-  max-width: 600px;
+.App {
+  font-family: Arial, sans-serif;
   margin: 0 auto;
   padding: 20px;
+  max-width: 600px;
 }
 
-h1 {
+.header {
   text-align: center;
+  color: #ffc746;
+}
+
+.profile {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #ffc746;
+}
+
+.profile img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.edit-profile {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
+.edit-profile input[type="text"],
+.edit-profile input[type="file"],
+.edit-profile button {
+  display: block;
+  width: 100%;
   margin-bottom: 10px;
-}
-
-input[type="text"] {
-  width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 5px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+.edit-profile button {
+  background-color: #4b4b4b;
+  color: #ffc746;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 15px;
 }
 
-button:hover {
-  background-color: #0056b3;
+.edit-profile button:hover {
+  background-color: #2c2c2c;
+}
+
+.edit-profile img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }

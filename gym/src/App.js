@@ -9,7 +9,8 @@ import NavBar from "./Components/Navbar/Navbar";
 import ProductDesc from "./Components/ProductDescPage/ProductDesc";
 import CategoriesPage from "./Components/Categories/CategoriesPage/CategoriesPage";
 import Test from "./Components/Test/Test";
-
+import Signin from "./Components/Authentication/Signin";
+import Signup from "./Components/Authentication/Signup";
 function App() {
   return (
     <>
@@ -22,6 +23,8 @@ function App() {
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Details/:id" element={<ProductDesc/>} />
           <Route exact path="/Test" element={<Test/>} />
+          <Route exact path="/Signin" element={<Signin />} />
+          <Route exact path="/Signup" element={<Signup />} />
         </Routes>
       </Router>
     </>

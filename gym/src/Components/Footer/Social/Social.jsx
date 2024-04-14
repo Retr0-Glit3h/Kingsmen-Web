@@ -11,10 +11,10 @@ function Social() {
         <div className="social">
             <h1 className="Mont600" style={{color:"#fff", fontSize:20}}>Follow us on</h1>
             <div className="social-icons">
-                <Link to="https://www.instagram.com/"><InstagramIcon className="socialIcon" style={{ color: '#5b02ff' }}/></Link>
-                <Link to="https://www.youtube.com/"><YouTubeIcon className="socialIcon" style={{ color: '#5b02ff' }}/></Link>
-                <Link to="https://www.facebook.com/"><span><FacebookIcon style={{ color: '#5b02ff' }}/></span></Link>
-                <Link to="https://twitter.com/"><TwitterIcon className="socialIcon" style={{ color: '#5b02ff' }}/></Link>
+                <Link to="https://www.instagram.com/"><InstagramIcon className="socialIcon" style={{color:'#ffc746'}}/></Link>
+                <Link to="https://www.youtube.com/"><YouTubeIcon className="socialIcon" style={{ color: '#ffc746'}}/></Link>
+                <Link to="https://www.facebook.com/"><span><FacebookIcon style={{ color: '#ffc746' }}/></span></Link>
+                <Link to="https://twitter.com/"><TwitterIcon className="socialIcon" style={{ color: '#ffc746' }}/></Link>
             </div>
             
         </div>

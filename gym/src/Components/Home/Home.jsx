@@ -56,13 +56,13 @@ const Home = () =>{
                 </div>
             </div>
             <div>
-                <div className="sectionTitleBar">
+                {/* <div className="sectionTitleBar">
                     <div class="vl" />
                     <span className="sectionTitle">Seasonal <span className="sectionTitle2">Collection</span></span>
                 </div>
                 <div className="seasonalSection">
                     <SeasonalFavs />
-                </div>
+                </div> */}
             </div>
             <div>
                 <div className="sectionTitleBar">

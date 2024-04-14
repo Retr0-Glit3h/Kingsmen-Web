@@ -1,72 +1,51 @@
-// Import React and other necessary libraries
 import React, { useState } from 'react';
+import Profile from './Profile';
+import EditProfile from './EditProfile';
+import './Test.css';
+import { supabase } from '../supabaseClient';
+import { Email } from '@mui/icons-material';
 
+function Info() {
+  const [isEditing, setIsEditing] = useState(false);
+  const [profileData, setProfileData] = useState({
+    name: '',
+    id: '',
+    address: '',
+    chest:'',
+    waist:'',
+    sleeves:'',
+    height: '',
+    shoulder: '',
 
-// Define the SizePage component
-const SizePage = () => {
-  // Define state variables for user sizes
-  const [chestSize, setChestSize] = useState('');
-  const [waistSize, setWaistSize] = useState('');
-  const [inseamSize, setInseamSize] = useState('');
-  const [shoulderSize, setShoulderSize] = useState('');
-  const [sleeveSize, setSleeveSize] = useState('');
+   
+  });
 
-  // Define a function to handle submitting sizes
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Logic to handle submitting sizes, for example, sending them to a server
-    alert('Sizes submitted!');
+  const toggleEdit = () => {
+    setIsEditing(!isEditing);
+  };
+
+  const saveChanges = (newData) => {
+    setProfileData(newData);
+    setIsEditing(false);
   };
 
   return (
-    <div className="size-page">
-      <h1>Size Chart</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Chest Size:
-          <input
-            type="text"
-            value={chestSize}
-            onChange={(event) => setChestSize(event.target.value)}
-          />
-        </label>
-        <label>
-          Waist Size:
-          <input
-            type="text"
-            value={waistSize}
-            onChange={(event) => setWaistSize(event.target.value)}
-          />
-        </label>
-        <label>
-          Inseam Size:
-          <input
-            type="text"
-            value={inseamSize}
-            onChange={(event) => setInseamSize(event.target.value)}
-          />
-        </label>
-        <label>
-          Shoulder Size:
-          <input
-            type="text"
-            value={shoulderSize}
-            onChange={(event) => setShoulderSize(event.target.value)}
-          />
-        </label>
-        <label>
-          Sleeve Size:
-          <input
-            type="text"
-            value={sleeveSize}
-            onChange={(event) => setSleeveSize(event.target.value)}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+    <div className="App">
+      <h1 className='header'>Profile Page</h1>
+      {isEditing ? (
+        <EditProfile profileData={profileData} saveChanges={saveChanges} />
+      ) : (
+        <Profile profileData={profileData} />
+      )}
+      <button onClick={toggleEdit}>
+        {isEditing ? 'Cancel' : 'Edit Profile'}
+      </button>
     </div>
   );
-};
+}
 
-// Export the SizePage component
-export default SizePage;
+export default Info;
+
+
+
+
